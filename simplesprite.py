@@ -12,9 +12,7 @@ class SimpleSprite:
     self.image = self.animation_images[self.image_index]
 
   # display the sprite in the screen
-  def display(self, x, y):
-    self.x = x
-    self.y = y
+  def display(self):
     self.screen.blit(pygame.transform.flip(self.image, self.flip, False), (self.x, self.y))
 
   # move the sprite
